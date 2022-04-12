@@ -6,24 +6,32 @@ html {
 
 body {
   background: #282828;
+  text-align: center;
 }
 .drumkit {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .pad {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  border-radius: 600px;
-  flex: 1 0 calc(33.333% - 30px);
-  background: radial-gradient(rgb(40, 1, 214),rgb(110, 90, 1))
+  margin: 5px;
+  border-radius: 20px;
+  flex: 1 0 calc(33.333% - 20px);
+  background: radial-gradient(rgb(71, 36, 226),rgb(5, 8, 59))
 };
 
 .pad img {
-  width: 100px;
-  pointer-events: none;
+  width: 150px;
+  pointer-events: all;
 }
+footer{
+  font-weight: 900;
+  font-style: initial; 
+}
+
+
