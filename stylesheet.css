@@ -20,5 +20,5 @@ body {
   margin: 10px;
   border-radius: 600px;
   flex: 1 0 calc(33.333% - 30px);
-  background: radial-gradient(rgb(214, 175, 1),rgb(102, 84, 2))
+  background: radial-gradient(rgb(40, 1, 214),rgb(102, 84, 2))
 };
