@@ -24,6 +24,6 @@ body {
 };
 
 .pad img {
-  width: 150px;
+  width: 100px;
   pointer-events: none;
 }
