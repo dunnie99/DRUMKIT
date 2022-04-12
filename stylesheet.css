@@ -20,5 +20,10 @@ body {
   margin: 10px;
   border-radius: 600px;
   flex: 1 0 calc(33.333% - 30px);
-  background: radial-gradient(rgb(40, 1, 214),rgb(102, 84, 2))
+  background: radial-gradient(rgb(40, 1, 214),rgb(110, 90, 1))
 };
+
+.pad img {
+  width: 150px;
+  pointer-events: none;
+}
