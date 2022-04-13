@@ -32,10 +32,25 @@ const Beats = new Howl({
   });
 
   const drumkit = document.querySelector('.drumkit');
-  drumkit.addEventListener('click', (event) => {
+  function playBeats(event) {
     //console.log('button has been clicked')
     if (event.target.classList.contains('pad')) {
+      event.preventDefault();
       let soundToPlay = event.target.dataset.sound;
-      Beats.play(soundToPlay)
+      Beats.play(soundToPlay);
     }
+  }
+  function setViewportHeight () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  
+  setViewportHeight();
+  window.addEventListener('resize', () => {
+    setTimeout(setViewportHeight, 100);
   });
+
+  drumkit.addEventListener('click', playBeats);
+  drumkit.addEventListener('touchstart', playBeats);
+

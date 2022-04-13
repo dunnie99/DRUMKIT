@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 60px;
   flex: 1 0 calc(33.333% - 20px);
   background: radial-gradient(rgb(71, 36, 226),rgb(5, 8, 59))
 };
