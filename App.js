@@ -33,8 +33,8 @@ const Beats = new Howl({
 
   const drumkit = document.querySelector('.drumkit');
   drumkit.addEventListener('click', (event) => {
+    //console.log('button has been clicked')
     if (event.target.classList.contains('pad')) {
-      //console.log('button has been clicked')
       let soundToPlay = event.target.dataset.sound;
       Beats.play(soundToPlay)
     }
